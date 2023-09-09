@@ -5,14 +5,16 @@ let coinsInMachine = [
     5, // tjuekroninger
 ];
 let coinsInserted = [
-    0, // enkroninger
-    0, // femkroninger
-    0, // tikroninger
-    0, // tjuekroninger
+    1, // enkroninger
+    2, // femkroninger
+    3, // tikroninger
+    4, // tjuekroninger
 ];
 let coinsReturned = [
-    0, // enkroninger
-    0, // femkroninger
-    0, // tikroninger
-    0, // tjuekroninger
+    4, // enkroninger
+    3, // femkroninger
+    2, // tikroninger
+    1, // tjuekroninger
 ];
+let cokesInStore = 10;
+let isCokeInDelivery = true;
