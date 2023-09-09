@@ -3,7 +3,7 @@ function updateView() {
         <div class="flexVertical">
             <div class="flexHorizontal">
                 <div class="automat">
-                    <h1>Cola-automat</h1>
+                    <h1>Cola - 25kr</h1>
                     <div class="innmat">
                         ${getCoinsHtml(coinsInMachine)}
                         <div class="cokes">
@@ -16,8 +16,9 @@ function updateView() {
                     </div>
                 </div>            
                 <div>
-                    Mynt-utkast: ${valueFromCoinCounts(coinsReturned)}kr
+                    Mynt- og cola-utkast: ${valueFromCoinCounts(coinsReturned)}kr
                     ${getCoinsHtml(coinsReturned)}
+                    ${repeatImgDivHtml('coke', 'coke', isCokeInDelivery ? 1 : 0)}
                 </div>
             </div>
             <div class="flexVertical">
@@ -29,12 +30,14 @@ function updateView() {
                     <path transform="rotate(-1.79 -12147.887 7779.517)" d="M344.352 455.71a31.228 33.718 0 0 1-39.995.25" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-opacity:1"/>
                 </svg>
                 <div class="flexHorizontal">
-                    <button>Putte inn 1kr</button>
+                    <button onclick="insertCoin(0)">Putte inn 1kr</button>
                     <button>Putte inn 5kr</button>
                     <button>Putte inn 10kr</button>
                     <button>Putte inn 20kr</button>
-                    <button>Kjøpe cola</button>
-                    <button>Angre</button>
+                    <button onclick="returnCoins()">Angre</button>
+                    <button>Ta myntene</button>
+                    <button onclick="buyCoke()">Kjøpe cola</button>
+                    <button>Ta cola</button>
                 </div>
             </div>
         </div>

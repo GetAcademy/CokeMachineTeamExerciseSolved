@@ -20,6 +20,7 @@
 .automat {
     border: 5px solid gray;
     padding-left: 1rem;
+    margin-right: 1rem;
     background-color: lightblue;
 }
 
