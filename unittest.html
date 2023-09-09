@@ -39,13 +39,29 @@
         QUnit.test('kjøpe cola - for lite penger', function (assert) {
             // arrange
             initModel();
-            coinsInserted[1] = 4; // 4 x 5kr = 20kr
+            insertCoin(5);
 
             // act
             buyCoke();
 
             // assert
             assert.equal(false, isCokeInDelivery);
+        });
+
+        QUnit.test('angre', function (assert) {
+            // arrange
+            initModel();
+            insertCoin(1);
+            insertCoin(5);
+
+            // act
+            returnCoins();
+
+            // assert
+            assert.equal(1, coinsReturned[0]);
+            assert.equal(1, coinsReturned[1]);
+            // eller
+            assert.deepEqual(coinsReturned, [1, 1, 0, 0])
         });
     </script>
 </body>
