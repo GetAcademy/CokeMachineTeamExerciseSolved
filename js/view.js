@@ -1,5 +1,15 @@
 function updateView() {
-    document.getElementById('app').innerHTML = getCoinsHtml(coinsInMachine);
+    document.getElementById('app').innerHTML = /*HTML*/`
+        <div class="automat">
+            <h1>Cola-automat</h1>
+
+            ${getCoinsHtml(coinsInMachine)}
+        </div>
+
+    `;
+    
+    
+    
 }
 
 function getCoinsHtml(coinCounts){

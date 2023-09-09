@@ -3,10 +3,18 @@ img{
 }
 
 .coins{
-    display: flex; align-items: flex-end
+    display: flex; 
+    align-items: flex-end;
+    padding-bottom: 5.5rem;
 }
 
 .coin{
     height: 0.5rem;
     overflow: visible;
+}
+
+.automat{
+    border: 5px solid gray;
+    padding-left: 1rem;
+    background-color: lightblue;
 }
