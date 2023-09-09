@@ -1,0 +1,12 @@
+img{
+    height: 5rem;
+}
+
+.coins{
+    display: flex; align-items: flex-end
+}
+
+.coin{
+    height: 0.5rem;
+    overflow: visible;
+}
