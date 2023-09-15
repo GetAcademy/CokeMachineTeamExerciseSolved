@@ -21,6 +21,7 @@ function updateView() {
                     ${repeatImgDivHtml('coke', 'coke', isCokeInDelivery ? 1 : 0)}
                 </div>
             </div>
+            <div style="color: red">${errorMessage}</div>
             <div class="flexVertical">
                 <svg xmlns="http://www.w3.org/2000/svg" width="170" height="240" version="1.0">
                     <path d="m289.706 466.48 55.882 16.47 51.47-17.353M305 576.186l40.882-60.294 31.765 59.705M345.91 516v-64.367" style="fill:none;fill-opacity:.75;fill-rule:evenodd;stroke:#000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-258.382 -359.686)"/>
@@ -35,7 +36,7 @@ function updateView() {
                     <button onclick="insertCoin(10)">Putte inn 10kr</button>
                     <button onclick="insertCoin(20)">Putte inn 20kr</button>
                     <button onclick="returnCoins()">Angre</button>
-                    <button>Ta myntene</button>
+                    <button onclick="takeCoins()">Ta myntene</button>
                     <button onclick="buyCoke()">Kjøpe cola</button>
                     <button>Ta cola</button>
                 </div>
