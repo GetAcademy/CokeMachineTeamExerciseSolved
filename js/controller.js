@@ -60,7 +60,7 @@ function giveChangeAndReturnIsSuccess(actuallyDoIt, amount) {
 }
 
 function insertCoin(value) {
-    let index = coinV;
+    let index = coinIndexFromValue(value);
     // alt 2
     // if (value == 1) index = 0;
     // else if (value == 5) index = 1;
