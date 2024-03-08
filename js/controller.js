@@ -31,20 +31,11 @@ function buyCoke() {
         updateView();
         return;
     }
-    // let valueToReturn = valueInserted - 25;
-    // if (!giveChangeAndReturnIsSuccess(false, valueToReturn)) {
-    //     errorMessage = 'Automaten har ikke returmynter';
-    //     updateView();
-    //     return;
-    // }
     errorMessage = '';
-    //giveChangeAndReturnIsSuccess(true, valueToReturn);
     for (let i = 0; i < coinsInserted.length; i++) {
         coinsInMachine[i] += coinsInserted[i];
         coinsInserted[i] = 0;
     }
-
-
     cokesInStore--;
     isCokeInDelivery = true;
     updateView();
@@ -69,11 +60,14 @@ function giveChangeAndReturnIsSuccess(actuallyDoIt, amount) {
 }
 
 function insertCoin(value) {
-    let index;
-    if (value == 1) index = 0;
-    else if (value == 5) index = 1;
-    else if (value == 10) index = 2;
-    else if (value == 20) index = 3;
+    let index = coinV;
+    // alt 2
+    // if (value == 1) index = 0;
+    // else if (value == 5) index = 1;
+    // else if (value == 10) index = 2;
+    // else if (value == 20) index = 3;
+
+    // alt 3
     // const index =
     //     value == 1 ? 0 :
     //     value == 5 ? 1 :
